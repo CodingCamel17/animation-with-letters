@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.text-cnt{
+    position: relative;
+}
+
+.main-text{
+    font-size: 6rem;
+    font-family: 'Courier New', Courier, monospace;
+}
