@@ -12,13 +12,14 @@ class randomLettersAnimation{
         this.random = '';
         this.lettersAnimation();
     };
-    //funkcja wstawiająca podany tekst do wybranego kontenera
+    
+    //adding text to container function
     appendingText(){
         this.container = document.querySelector(this.selector);
         this.container.innerText = this.text;
     }
 
-    //funkcja z ograniczeniem czasowym, która wstawia wygenerowane randomowo znaki do wybranego kontenera
+    //adding random text to container function 
     appendingRandom(i, random){
         random = this.random;
         setTimeout(() => {
@@ -26,7 +27,7 @@ class randomLettersAnimation{
         }, i* this.options.randomTimeoutTime);
     }
 
-    //funkcja z ograniczeniem czasowym, która wstawia randomowe znaki do tekstu który po chwili sie pojawia za pomocą metody this.text.substr.
+    //final mixing letters function
     lettersAnimation(){
         setTimeout(() => {
             for(let i=0; i<this.text.length+1; i++){
